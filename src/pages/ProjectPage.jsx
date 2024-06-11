@@ -16,7 +16,7 @@ const ProjectPage = ({}) => {
       <section>
         <div className="container m-auto py-6 px-6">
           <Link
-            to="/projects"
+            to="/pubsite/projects"
             className="text-2 hover:text-3 flex items-center"
           >
             <FaArrowLeft className="mr-2" /> Back to Projects

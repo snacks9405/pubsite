@@ -16,26 +16,26 @@ const NavBar = () => {
             className="flex flex-1  items-center justify-center md:items-stretch md:justify-start text-white"
           >
             {/* <!-- Logo --> */}
-            <NavLink className="flex flex-shrink-0 hover:text-3 items-center mr-4" to="/">
-              <span className="hidden md:block text-2xl font-bold ml-2"
+            <NavLink className="flex flex-shrink-0 hover:text-3 items-center mr-4" to="/pubsite/">
+              <span className="md:block text-2xl font-bold ml-2"
               >
                 &#123;a&#125;
               </span>
             </NavLink>
             <div className="md:ml-auto ">
               <div className="flex space-x-2">
-                <NavLink
-                  to="/"
+                {/* <NavLink
+                  to="/pubsite/"
                   className={linkClass}>
                     Home
-                </NavLink>
+                </NavLink> */}
                 <NavLink
-                  to="/projects"
+                  to="/pubsite/projects"
                   className={linkClass}>
                     Projects
                 </NavLink>
                 <NavLink
-                  to="/experiment/"
+                  to="/pubsite/experiment/"
                   className={linkClass}>
                     Experiment Space
                 </NavLink>

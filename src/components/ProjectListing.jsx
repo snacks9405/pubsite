@@ -41,7 +41,7 @@ const ProjectListing = ({ project }) => {
           </label>
         </div>
         <Link
-          to={`/projects/${project.id}`}
+          to={`/pubsite/projects/${project.id}`}
           className="h-[36px] bg-2 hover:bg-3 text-white px-4 py-2 rounded-lg text-center text-sm"
         >
           Read More
