@@ -24,7 +24,7 @@ const projectsList = [
     summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
     type: "java",
     description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
-    image: "",
+    logo: "",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const projectsList = [
     summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
     type: "java",
     description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
-    image: "",
+    logo: "",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const projectsList = [
     summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
     type: "java",
     description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
-    image: "",
+    logo: "",
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const projectsList = [
     summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
     type: "java",
     description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
-    image: "",
+    logo: "",
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const projectsList = [
     summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
     type: "java",
     description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
-    image: "",
+    logo: "",
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const projectsList = [
     summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
     type: "java",
     description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
-    image: "",
+    logo: "",
   }
 ];
 
