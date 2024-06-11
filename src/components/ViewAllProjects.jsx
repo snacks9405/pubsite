@@ -6,7 +6,7 @@ const ViewAllProjects = () => {
             <Link
                 to="/pubsite/projects"
                 className="block bg-2 text-white text-center py-4 px-6 rounded-xl hover:bg-3"
-            >View All Jobs
+            >View All Projects
             </Link>
         </section>
     )

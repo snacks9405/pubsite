@@ -41,7 +41,7 @@ const ProjectPage = ({}) => {
                   <p>{project.date}</p>
                   
                 </div>
-                <div className="flex justify-center md:justify-center">
+                <div className="flex justify-center py-8">
                 <img className="w-48"
                      src={project.logo} />
                 </div>
