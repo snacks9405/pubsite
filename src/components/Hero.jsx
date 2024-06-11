@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = ({ title = "Alex",
   subtitle = "Fresh graduate of Computer Science.",
-  img = "/demo.webp" }) => {
+  img = "https://i.ibb.co/khv65J5/demo.webp" }) => {
   return (
     <section className="bg-5 py-36 mb-4">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-row">
