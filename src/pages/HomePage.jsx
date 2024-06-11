@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       <Hero title="Alex"
-            subtitle="Fresh graduate of Computer Science. Interested in improving the perception of digital client to customer interactions."/>
+            subtitle="Fresh graduate of Computer Science. Interested in improving the perception of digital merchant to client interactions."/>
         <ProjectListings isHome={true}/>
         <ViewAllProjects />
     </>
