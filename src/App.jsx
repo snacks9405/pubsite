@@ -1,35 +1,107 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
+import MainLayout from './layouts/MainLayout';
+import HomePage from './pages/HomePage';
+import ProjectsPage from './pages/ProjectsPage';
+import ProjectPage from './pages/ProjectPage';
+import ExperimentPage from './pages/ExperimentPage';
+import NotFoundPage from './pages/NotFoundPage';
+
+const projectsList = [
+  {
+    id: 0,
+    title: "project 1",
+    date: "2022",
+    summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
+    type: "java",
+    description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
+    logo: "/demo.webp",
+  },
+  {
+    id: 1,
+    title: "project 2",
+    date: "2021",
+    summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
+    type: "java",
+    description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
+    image: "",
+  },
+  {
+    id: 2,
+    title: "project 3",
+    date: "2020",
+    summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
+    type: "java",
+    description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
+    image: "",
+  },
+  {
+    id: 3,
+    title: "project 4",
+    date: "2019",
+    summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
+    type: "java",
+    description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
+    image: "",
+  },
+  {
+    id: 4,
+    title: "project 4",
+    date: "2019",
+    summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
+    type: "java",
+    description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
+    image: "",
+  },
+  {
+    id: 5,
+    title: "project 4",
+    date: "2019",
+    summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
+    type: "java",
+    description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
+    image: "",
+  },
+  {
+    id: 6,
+    title: "project 4",
+    date: "2019",
+    summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
+    type: "java",
+    description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
+    image: "",
+  }
+];
 
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/projects/" element={<ProjectsPage />} />
+        <Route path="/projects/:id" element={<ProjectPage />} />
+        <Route path="/experiment/" element={<ExperimentPage />} />
+
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+      )
   )
+
+  
+
+
+  return (
+    
+    <RouterProvider router={router}/>
+  )
+
+
 }
 
-export default App
+
+
+
+
+export {App as default, projectsList}
