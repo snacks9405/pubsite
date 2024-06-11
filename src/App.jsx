@@ -15,7 +15,7 @@ const projectsList = [
     summary: "wait till you see this cool stuff holy cow it's so insane off the freakin chain mother freaker come react to the tailscript wind magic of",
     type: "java",
     description: "i did so much cool stuff with this one you have no idea I put the spatula through the ring of the leopard shirt it was nuts.",
-    logo: "/demo.webp",
+    logo: "https://i.ibb.co/khv65J5/demo.webp",
   },
   {
     id: 1,
