@@ -14,10 +14,17 @@ const projectsList = [
     date: "2024",
     github: "https://github.com/snacks9405/pubsite",
     summary: "A need for a portfolio platform realized its own solution by becoming a personal project culminating in a stronger understanding of React based websites " + 
-             "and hopefully a great first impression on MCC, Inc.",
+             "and hopefully a great first impression!",
     type: "ReactJS",
-    description: "",
-    details: "",
+    description: "Emerging from my studies into a pretty strange job market, I found myself lacking a way to demonstrate some of the valuable skills that I've been developing " + 
+                 "over the past four years. I wasted no time in researching ways to publish my work. I quickly settled on ReactJS as the framework of choice as it had a wealth " + 
+                 "of documentation to support my efforts. After putzing around in tutorial hell for a few days, I pivoted and succeeded in cobbling together everything that I'd " + 
+                 "learned into this project of projects. I have to say that it has felt great to work on something where the rubric is self-imposed. I'm doubly excited to continue " + 
+                 "developing new ideas now that I have this place to showcase and demo them. Now, on to archiving all of my old work...",
+    details: "Development occurred primarily on MacOS in Visual Studio Code. Deployment ocurred on windows via git pages (what a headache that was!) and I look forward to establishing " + 
+             "a more permanent solution. Data is currently stored in JSON format as to easily expand from this demo to a build utilizing SQL databasing. Routing is handled by the router-dom. " + 
+             "It includes a 404 page for most cases, an experimental landing page to test out new features, and reactive components. Styling is done using tailwindcss. My css game isn't " + 
+             "where I'd like it to be yet, but tailwind was incredibly helpful in that regard. I'm incredibly proud of what I've achieved in what amounts to a long weekend of becoming absorbed in React.",
     images: [
       "https://i.ibb.co/mzcGycK/pubsite-screencap.png",
       "https://i.ibb.co/pfXwMVq/structure.png",
