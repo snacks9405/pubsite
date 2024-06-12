@@ -5,7 +5,7 @@ import { projectsList } from '../App';
 
 
 
-const ProjectPage = ({}) => {
+const ProjectPage = ({ }) => {
 
   const { id } = useParams();
   var project = projectsList[id];
@@ -39,34 +39,39 @@ const ProjectPage = ({}) => {
                   className="text-1 mb-4 flex align-middle justify-center md:justify-start"
                 >
                   <p>{project.date}</p>
-                  
+
                 </div>
-                <div className="flex justify-center py-8">
-                <img className="w-48"
-                     src={project.logo} />
+                <div className="container rounded-lg shadow-md bg-indigo-50 px-12 max-h-96 max-w-96 overflow-y-scroll justify-center md:justify-center">
+                  {project.images.map((image, index) => (
+                    <div id={index} className="py-2 px-2 rounded-lg">
+                      <Link to={image} target="_blank">
+                        <img src={image} className="object-scale-down h-96 rounded-lg" />
+                      </Link>
+                    </div>
+                  ))}
                 </div>
                 <div
-                  className="text-1 mb-4 flex align-middle justify-center md:justify-start"
+                  className="text-1 mb-4 flex align-middle justify-center md:justify-start pt-4"
                 >
                   <p>{project.summary}</p>
-                  
+
                 </div>
 
-                
+
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md mt-6">
                 <h3 className="text-2 text-lg font-bold mb-6">
-                  Project Description
+                  Project Overview
                 </h3>
 
                 <p className="mb-4">
                   {project.description}
                 </p>
 
-                <h3 className="text-2 text-lg font-bold mb-2">Details</h3>
+                <h3 className="text-2 text-lg font-bold mb-2">Development Details</h3>
 
-                <p className="mb-4">idk more here</p>
+                <p className="mb-4">{project.details}</p>
               </div>
             </main>
 
@@ -74,31 +79,34 @@ const ProjectPage = ({}) => {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-6">Technologies</h3>
 
-                <h2 className="text-2xl">details here</h2>
+                {project.technologies.map((tech, index) => (
+                  <img src={tech} className="h-24" />
+                ))}
 
-                <p className="my-2">
-                  more details here
-                </p>
+
 
                 <hr className="my-4" />
 
-                <h3 className="text-xl">Collaborators:</h3>
+                <h3 className="text-xl">Collaborators</h3>
+
 
                 <p className="my-2 bg-indigo-100 p-2 font-bold text-2 ">
-                  <Link className="hover:text-3 cursor-pointer" to="https://github.com/CloseRange" target="_blank">
-                    Michael Hulbert
-                  </Link>
-                  <br />
-                  <Link className="hover:text-3 cursor-pointer" to="https://github.com/CloseRange" target="_blank">
-                    Michael Hulbert
-                  </Link>
+                  {project.collaborators.map((collaborator) => (
+                    <div>
+                      <Link className="hover:text-3 cursor-pointer" to={collaborator.github} target="_blank">
+                        {collaborator.name}
+                      </Link>
+                    </div>
+                  ))}
                 </p>
 
-                {/* <h3 className="text-xl">another box</h3>
+                <h3 className="text-xl">Repo</h3>
 
                 <p className="my-2 bg-indigo-100 p-2 font-bold">
-                  get rid of this? 
-                </p> */}
+                  <Link className="hover:text-3 cursor-pointer" to={project.github} target="_blank">
+                    {project.github}
+                  </Link>
+                </p>
               </div>
 
             </aside>
@@ -110,7 +118,7 @@ const ProjectPage = ({}) => {
 
     </>
 
-    
+
   );
 }
 
