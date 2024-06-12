@@ -51,7 +51,7 @@ const ProjectPage = ({ }) => {
                   ))}
                 </div>
                 <div
-                  className="text-1 mb-4 flex align-middle justify-center md:justify-start pt-4"
+                  className="text-1 mb-2 flex align-middle justify-center md:justify-start pt-4"
                 >
                   <p>{project.summary}</p>
 
@@ -61,7 +61,7 @@ const ProjectPage = ({ }) => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md mt-6">
-                <h3 className="text-2 text-lg font-bold mb-6">
+                <h3 className="text-2 text-lg font-bold mb-4">
                   Project Overview
                 </h3>
 
@@ -69,7 +69,7 @@ const ProjectPage = ({ }) => {
                   {project.description}
                 </p>
 
-                <h3 className="text-2 text-lg font-bold mb-2">Development Details</h3>
+                <h3 className="text-2 text-lg font-bold mb-4">Development Details</h3>
 
                 <p className="mb-4">{project.details}</p>
               </div>
